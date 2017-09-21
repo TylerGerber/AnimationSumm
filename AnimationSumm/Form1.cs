@@ -25,7 +25,7 @@ namespace AnimationSumm
 
         private void Form1_Click(object sender, EventArgs e)
         {
-            //Start Up clean screen
+            //Start Up clean screen //
             BackgroundImage = null;
             name.Dispose();
             Refresh();
