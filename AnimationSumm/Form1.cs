@@ -30,10 +30,11 @@ namespace AnimationSumm
             BackgroundImage = null;
             name.Dispose();
             Refresh();
-            SoundPlayer player = new SoundPlayer(Properties.Resources.gout);
+            SoundPlayer grenadeOut = new SoundPlayer(Properties.Resources.gout);
+            SoundPlayer kapow = new SoundPlayer(Properties.Resources.boom);
 
             //Frame 1
-            player.Play();
+            grenadeOut.Play();
             Graphics formGraphics = this.CreateGraphics();
             Pen blackPen  = new Pen(Color.Black, 2);
             SolidBrush grayFill = new SolidBrush(Color.Gray);
@@ -42,6 +43,8 @@ namespace AnimationSumm
             SolidBrush bod = new SolidBrush(Color.Red);
             SolidBrush brown = new SolidBrush(Color.Chocolate);
             SolidBrush pelvisAndLeg = new SolidBrush(Color.Blue);
+            SolidBrush red = new SolidBrush(Color.DarkRed);
+            SolidBrush orange = new SolidBrush(Color.Orange);
             formGraphics.FillRectangle(grayFill, 0, 0, 600, 600);
 
             //ball
@@ -419,6 +422,240 @@ namespace AnimationSumm
             formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
             formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
 
+            //explosion
+            formGraphics.FillEllipse(red, 255, 345, 25, 25);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 22
+            kapow.Play();
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion
+            formGraphics.FillEllipse(red, 255, 325, 45, 45);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 23
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion
+            formGraphics.FillEllipse(red, 255, 275, 65, 65);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 24
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion
+            formGraphics.FillEllipse(red, 225, 255, 85, 85);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 25
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 225, 255, 85, 85);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 280, 35, 35);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 21
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 225, 255, 85, 85);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 280, 0, 0);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 22
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 225, 255, 100, 100);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 280, 50, 050);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 22
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 225, 225, 150, 150);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 260, 0, 0);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 22
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 225, 205, 200, 200);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 250, 130, 130);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 22
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 205, 175, 250, 250);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 250, 0, 0);
+
+            Thread.Sleep(200);
+            formGraphics.Clear(Color.Gray);
+            //Frame 22
+
+            //ball
+            formGraphics.FillEllipse(blackFill, -30, 25, 25, 25);
+
+            //dude
+            formGraphics.FillEllipse(brown, 258, 185, 58, 70);
+            formGraphics.FillEllipse(bod, 257, 225, 55, 140);
+            formGraphics.FillEllipse(pelvisAndLeg, 258, 335, 55, 30);
+            formGraphics.FillEllipse(pelvisAndLeg, 257, 350, 20, 50);
+            formGraphics.FillEllipse(pelvisAndLeg, 290, 350, 20, 50);
+            formGraphics.FillEllipse(head, 257, 200, 55, 75);
+            formGraphics.DrawArc(blackPen, 265, 240, 30, 20, 10, 130);
+            formGraphics.FillEllipse(blackFill, 265, 225, 5, 5);
+            formGraphics.FillEllipse(blackFill, 285, 225, 5, 5);
+
+            //explosion red
+            formGraphics.FillEllipse(red, 205, 175, 250, 250);
+
+            //explotion orange
+            formGraphics.FillEllipse(orange, 250, 250, 0, 0);
         }
     }
 }

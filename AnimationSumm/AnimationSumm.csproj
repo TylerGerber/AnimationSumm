@@ -85,5 +85,8 @@
   <ItemGroup>
     <None Include="Resources\CSGO Grenade Out! Sound Effect.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grenade sound effect.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
