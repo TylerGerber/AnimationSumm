@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace AnimationSumm
 {
@@ -29,8 +30,10 @@ namespace AnimationSumm
             BackgroundImage = null;
             name.Dispose();
             Refresh();
-            
+            SoundPlayer player = new SoundPlayer(Properties.Resources.gout);
+
             //Frame 1
+            player.Play();
             Graphics formGraphics = this.CreateGraphics();
             Pen blackPen  = new Pen(Color.Black, 2);
             SolidBrush grayFill = new SolidBrush(Color.Gray);
