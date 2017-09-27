@@ -34,6 +34,7 @@ namespace AnimationSumm
             Refresh();
             SoundPlayer grenadeOut = new SoundPlayer(Properties.Resources.gout);
             SoundPlayer kapow = new SoundPlayer(Properties.Resources.boom);
+            SoundPlayer counterTerroristsWin = new SoundPlayer(Properties.Resources.CTW);
 
             //Frame 1
             grenadeOut.Play();
@@ -892,7 +893,7 @@ namespace AnimationSumm
 
             formGraphics.DrawString("Counter Terrorist's", newFont, blackFill, 50, 250);
             formGraphics.DrawString("Win", newFont, blackFill, 75, 300);
-
+            counterTerroristsWin.Play();
 
         }
     }
